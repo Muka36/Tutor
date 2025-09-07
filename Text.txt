@@ -40,7 +40,24 @@ by the if condition 3 + 5 < infinitiy  ( d[u] + c(u, v) < infinity ) here the co
 d[v] = 3 + 5 = 7;
 d[v] = 8.
 
-Example : image attached in the repo 
+Example : image attached in the repo (Non-directed graph)
+here now the starting index is 1,
+
+starting index : 1
+
+start index |  2   | 3  | 4    | 5     | 6     | 
+------------|------|----|------|-------|-------|
+2           |  2   | 4  | infi | infi  | infi  |  here smallest vertex from 1 is 2 of weight 2, from 1 to 3 the weight is 4 - 2 is minimum
+------------|------|----|------|-------|-------|
+3           |  2   |  3 |   9  | infi  | infi  |  here smallest vertex from 2 is 3 of weight 3 after relaxation , and 2 to 4 is 9 after relaxation
+------------|------|----|------|-------|-------|
+5           |  2   |  3 |   9  |   6   | infi  |  here smallest vertex from 3 is 5 of weight 6 after relaxation
+------------|------|----|------|-------|-------|
+4           |  2   | 3  |   8  |  6    | 11    |  here smallest vertex from 5 is 4 of weight 8 after relaxation, and the other vertex 5 to 6 of weight is 11.
+------------|------|----|------|-------|-------|
+6           |  2   | 3  |   8  |  6    |  9    | the final distance of the each nodes is here.
+
+
 
 
 
