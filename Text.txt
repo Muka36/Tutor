@@ -20,3 +20,28 @@ Then merge back up:
 [27,38] [43] → [27,38,43]
 [3,9] [10,82] → [3,9,10,82]
 [27,38,43] + [3,9,10,82] → [3,9,10,27,38,43,82]
+
+
+Dijkstra Algorithm :
+
+Find the short path to the destination, works with directed and non-directed graphs 
+example :
+1 -> 2 -> 4 
+  3    5     here we need to go to 1 to 4 but there is no directed path from 1 to 4 but we can go like 1 to 2 and then 2 is connected to 4 so 2 to 4 we can achieve the path 1 to 4 like this... but there is a condition which is 
+d[u] -> distance of u
+c(u,v) -> cost of the edges of u and v
+
+if(d[u] + c(u, v) < d[v]) {
+    d[v] = d[u] + c (u,v).
+}
+here d[u] = 3 
+    c(u,v) = 5
+by the if condition 3 + 5 < infinitiy  ( d[u] + c(u, v) < infinity ) here the condition becomes true, we can update the distance of v d[v] :
+d[v] = 3 + 5 = 7;
+d[v] = 8.
+
+Example : image attached in the repo 
+
+
+
+
