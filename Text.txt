@@ -22,7 +22,7 @@ Then merge back up:
 [27,38,43] + [3,9,10,82] → [3,9,10,27,38,43,82]
 
 
-Dijkstra Algorithm :
+Dijkstra Algorithm : (Single Source Shortest Path)
 
 Find the short path to the destination, works with directed and non-directed graphs 
 example :
@@ -56,6 +56,10 @@ start index |  2   | 3  | 4    | 5     | 6     |
 4           |  2   | 3  |   8  |  6    | 11    |  here smallest vertex from 5 is 4 of weight 8 after relaxation, and the other vertex 5 to 6 of weight is 11.
 ------------|------|----|------|-------|-------|
 6           |  2   | 3  |   8  |  6    |  9    | the final distance of the each nodes is here.
+
+in Djikstra if a non-directed graph is given you can make that into directed by adding parallel edges .
+
+Drawback of Djikstra Algorithm :
 
 
 
